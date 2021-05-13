@@ -1,3 +1,13 @@
+addEventListener('load',inic,false);
+
+function inic(){
+    document.getElementById('rate').addEventListener('change',rate_change,false);
+}
+
+function rate_change(){    
+    document.getElementById('rate_value').innerHTML=document.getElementById('rate').value;
+}
+
 function compute()
 {
     p = document.getElementById("principal").value;
